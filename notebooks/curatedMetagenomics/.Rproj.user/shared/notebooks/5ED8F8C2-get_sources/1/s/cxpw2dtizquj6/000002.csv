@@ -1,0 +1,5 @@
+"0","sampleMetadata %>% "
+"0","  filter(body_site=='stool' & antibiotics_current_use  == 'no' & disease == 'healthy') %>% "
+"0","  group_by(non_westernized) %>% "
+"0","  sample_n(100) %>% "
+"0","  ungroup() -> selected_samples"

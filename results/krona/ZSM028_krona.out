@@ -1,0 +1,25 @@
+100.0	Bacteria
+52.11245	Bacteria	Firmicutes
+45.61927	Bacteria	Bacteroidetes
+2.26828	Bacteria	Spirochaetes
+52.11245	Bacteria	Firmicutes	Clostridia
+45.61927	Bacteria	Bacteroidetes	Bacteroidia
+2.26828	Bacteria	Spirochaetes	Spirochaetia
+52.11245	Bacteria	Firmicutes	Clostridia	Clostridiales
+45.61927	Bacteria	Bacteroidetes	Bacteroidia	Bacteroidales
+2.26828	Bacteria	Spirochaetes	Spirochaetia	Spirochaetales
+45.61927	Bacteria	Bacteroidetes	Bacteroidia	Bacteroidales	Prevotellaceae
+33.04717	Bacteria	Firmicutes	Clostridia	Clostridiales	Ruminococcaceae
+7.71562	Bacteria	Firmicutes	Clostridia	Clostridiales	Clostridiaceae
+7.1606	Bacteria	Firmicutes	Clostridia	Clostridiales	Peptostreptococcaceae
+4.18906	Bacteria	Firmicutes	Clostridia	Clostridiales	Eubacteriaceae
+2.26828	Bacteria	Spirochaetes	Spirochaetia	Spirochaetales	Spirochaetaceae
+45.61927	Bacteria	Bacteroidetes	Bacteroidia	Bacteroidales	Prevotellaceae	Prevotella
+33.04717	Bacteria	Firmicutes	Clostridia	Clostridiales	Ruminococcaceae	Ruminococcus
+7.71562	Bacteria	Firmicutes	Clostridia	Clostridiales	Clostridiaceae	Clostridium
+7.1606	Bacteria	Firmicutes	Clostridia	Clostridiales	Peptostreptococcaceae	Intestinibacter
+4.18906	Bacteria	Firmicutes	Clostridia	Clostridiales	Eubacteriaceae	Eubacterium
+2.26828	Bacteria	Spirochaetes	Spirochaetia	Spirochaetales	Spirochaetaceae	Treponema
+33.04717	Bacteria	Firmicutes	Clostridia	Clostridiales	Ruminococcaceae	Ruminococcus	Ruminococcus_sp_CAG_624
+7.71562	Bacteria	Firmicutes	Clostridia	Clostridiales	Clostridiaceae	Clostridium	Clostridium_sp_CAG_510
+2.26828	Bacteria	Spirochaetes	Spirochaetia	Spirochaetales	Spirochaetaceae	Treponema	Treponema_succinifaciens

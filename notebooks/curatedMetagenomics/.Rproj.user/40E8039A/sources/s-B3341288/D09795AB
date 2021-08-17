@@ -1,0 +1,31 @@
+{
+    "id": "D09795AB",
+    "path": "~/Documents/GitHub/mpi-shh-summerschool-dag-material/Hands on Introduction to Ancient Microbiome Analysis/tutorial/notebooks/curatedMetagenomics/get_sources.Rmd",
+    "project_path": "get_sources.Rmd",
+    "type": "r_markdown",
+    "hash": "2786444557",
+    "contents": "",
+    "dirty": false,
+    "created": 1628757822410.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "tempName": "Untitled1",
+        "chunk_output_type": "inline",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "31,0",
+        "scrollLine": "25",
+        "rmdVisualWrapConfigured": "true",
+        "docOutlineVisible": "1",
+        "rmdVisualModeLocation": "925:11865"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1629124452,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1629124452460,
+    "read_only": false,
+    "read_only_alternatives": []
+}

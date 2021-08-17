@@ -1,0 +1,38 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+We're going to use the [curatedMetagenomicsData](<https://waldronlab.io/curatedMetagenomicData/>) library to get our reference sources.\
+This library contains curated metadata for human metagenomic samples, as well as pre-preprocessed taxonomic profiles using MetaPhlan 3.0
+
+```{r}
+library(curatedMetagenomicData)
+library(tidyverse)
+```
+
+```{r}
+sampleMetadata %>% 
+  filter(body_site=='stool' & antibiotics_current_use  == 'no' & disease == 'healthy') %>% 
+  group_by(non_westernized) %>% 
+  sample_n(100) %>% 
+  ungroup() -> selected_samples
+```
+
+```{r}
+selected_samples %>% 
+  returnSamples("relative_abundance") -> rel_ab
+```
+
+
+```{r}
+assay(rel_ab) %>% 
+  as.data.frame(.) %>% 
+  write.csv("../../data/curated_metagenomics/modern_sources.csv", row.names=TRUE)
+```
+
+```{r}
+selected_samples %>% 
+  as_tibble() %>% 
+  write_csv("../../data/metadata/curated_metagenomics_modern_sources.csv")
+```

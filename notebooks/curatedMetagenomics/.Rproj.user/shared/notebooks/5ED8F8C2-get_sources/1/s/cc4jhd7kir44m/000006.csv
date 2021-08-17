@@ -1,0 +1,3 @@
+"0","assay(rel_ab) %>% "
+"0","  as.data.frame(.) %>% "
+"0","  write_csv(""../../data/curated_metagenomics/modern_sources.csv"")"
