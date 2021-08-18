@@ -219,10 +219,39 @@ pre code {
 This library contains curated metadata for human metagenomic samples, as well as pre-preprocessed taxonomic profiles using MetaPhlan 3.0</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShjdXJhdGVkTWV0YWdlbm9taWNEYXRhKVxubGlicmFyeSh0aWR5dmVyc2UpXG5gYGAifQ== -->
-<pre class="r"><code>library(curatedMetagenomicData)
-library(tidyverse)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShjdXJhdGVkTWV0YWdlbm9taWNEYXRhKVxuYGBgIn0= -->
+<pre class="r"><code>library(curatedMetagenomicData)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiUmVnaXN0ZXJlZCBTMyBtZXRob2RzIG92ZXJ3cml0dGVuIGJ5ICdkYnBseXInOlxuICBtZXRob2QgICAgICAgICBmcm9tXG4gIHByaW50LnRibF9sYXp5ICAgICBcbiAgcHJpbnQudGJsX3NxbCAgICAgIFxuIn0= -->
+<pre><code>Registered S3 methods overwritten by &#39;dbplyr&#39;:
+  method         from
+  print.tbl_lazy     
+  print.tbl_sql      </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeSh0aWR5dmVyc2UpXG5gYGAifQ== -->
+<pre class="r"><code>library(tidyverse)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoi4pSA4pSAIEF0dGFjaGluZyBwYWNrYWdlcyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAgdGlkeXZlcnNlIDEuMy4xIOKUgOKUgFxu4pyTIGdncGxvdDIgMy4zLjUgICAgIOKckyBwdXJyciAgIDAuMy40XG7inJMgdGliYmxlICAzLjEuMyAgICAg4pyTIGRwbHlyICAgMS4wLjdcbuKckyB0aWR5ciAgIDEuMS4zICAgICDinJMgc3RyaW5nciAxLjQuMFxu4pyTIHJlYWRyICAgMi4wLjEgICAgIOKckyBmb3JjYXRzIDAuNS4xXG7ilIDilIAgQ29uZmxpY3RzIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgCB0aWR5dmVyc2VfY29uZmxpY3RzKCkg4pSA4pSAXG54IGRwbHlyOjpjb2xsYXBzZSgpICAgbWFza3MgQmlvc3RyaW5nczo6Y29sbGFwc2UoKSwgSVJhbmdlczo6Y29sbGFwc2UoKVxueCBkcGx5cjo6Y29tYmluZSgpICAgIG1hc2tzIEJpb2Jhc2U6OmNvbWJpbmUoKSwgQmlvY0dlbmVyaWNzOjpjb21iaW5lKClcbnggcHVycnI6OmNvbXBhY3QoKSAgICBtYXNrcyBYVmVjdG9yOjpjb21wYWN0KClcbnggZHBseXI6OmNvdW50KCkgICAgICBtYXNrcyBtYXRyaXhTdGF0czo6Y291bnQoKVxueCBkcGx5cjo6ZGVzYygpICAgICAgIG1hc2tzIElSYW5nZXM6OmRlc2MoKVxueCB0aWR5cjo6ZXhwYW5kKCkgICAgIG1hc2tzIFM0VmVjdG9yczo6ZXhwYW5kKClcbnggZHBseXI6OmZpbHRlcigpICAgICBtYXNrcyBzdGF0czo6ZmlsdGVyKClcbnggZHBseXI6OmZpcnN0KCkgICAgICBtYXNrcyBTNFZlY3RvcnM6OmZpcnN0KClcbnggZHBseXI6OmxhZygpICAgICAgICBtYXNrcyBzdGF0czo6bGFnKClcbnggZ2dwbG90Mjo6UG9zaXRpb24oKSBtYXNrcyBCaW9jR2VuZXJpY3M6OlBvc2l0aW9uKCksIGJhc2U6OlBvc2l0aW9uKClcbnggcHVycnI6OnJlZHVjZSgpICAgICBtYXNrcyBHZW5vbWljUmFuZ2VzOjpyZWR1Y2UoKSwgSVJhbmdlczo6cmVkdWNlKClcbnggZHBseXI6OnJlbmFtZSgpICAgICBtYXNrcyBTNFZlY3RvcnM6OnJlbmFtZSgpXG54IGRwbHlyOjpzbGljZSgpICAgICAgbWFza3MgWFZlY3Rvcjo6c2xpY2UoKSwgSVJhbmdlczo6c2xpY2UoKVxuIn0= -->
+<pre><code>── Attaching packages ───────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse 1.3.1 ──
+✓ ggplot2 3.3.5     ✓ purrr   0.3.4
+✓ tibble  3.1.3     ✓ dplyr   1.0.7
+✓ tidyr   1.1.3     ✓ stringr 1.4.0
+✓ readr   2.0.1     ✓ forcats 0.5.1
+── Conflicts ──────────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+x dplyr::collapse()   masks Biostrings::collapse(), IRanges::collapse()
+x dplyr::combine()    masks Biobase::combine(), BiocGenerics::combine()
+x purrr::compact()    masks XVector::compact()
+x dplyr::count()      masks matrixStats::count()
+x dplyr::desc()       masks IRanges::desc()
+x tidyr::expand()     masks S4Vectors::expand()
+x dplyr::filter()     masks stats::filter()
+x dplyr::first()      masks S4Vectors::first()
+x dplyr::lag()        masks stats::lag()
+x ggplot2::Position() masks BiocGenerics::Position(), base::Position()
+x purrr::reduce()     masks GenomicRanges::reduce(), IRanges::reduce()
+x dplyr::rename()     masks S4Vectors::rename()
+x dplyr::slice()      masks XVector::slice(), IRanges::slice()</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
@@ -446,11 +475,34 @@ dropping rows without rowTree matches:
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYXNzYXkocmVsX2FiKSAlPiUgXG4gIGFzLmRhdGEuZnJhbWUoLikgJT4lIFxuICB3cml0ZV9jc3YoXCIuLi8uLi9kYXRhL2N1cmF0ZWRfbWV0YWdlbm9taWNzL21vZGVybl9zb3VyY2VzLmNzdlwiKVxuYGBgIn0= -->
-<pre class="r"><code>assay(rel_ab) %&gt;% 
-  as.data.frame(.) %&gt;% 
-  write_csv(&quot;../../data/curated_metagenomics/modern_sources.csv&quot;)</code></pre>
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZm9yIChyIGluIG5hbWVzKGRhdGFfcmFua3MpKXtcbiAgcHJpbnQocilcbiAgYXNzYXlfcmFuayA9IGFzLmRhdGEuZnJhbWUoYXNzYXkoZGF0YV9yYW5rc1tbcl1dKSlcbiAgcHJpbnQocGFzdGUwKFwiLi4vLi4vZGF0YS9jdXJhdGVkX21ldGFnZW5vbWljcy9tb2Rlcm5fc291cmNlc19cIix0b2xvd2VyKHIpLFwiLmNzdlwiKSlcbiAgd3JpdGUuY3N2KGFzc2F5X3JhbmssIHBhc3RlMChcIi4uLy4uL2RhdGEvY3VyYXRlZF9tZXRhZ2Vub21pY3MvbW9kZXJuX3NvdXJjZXNfXCIsdG9sb3dlcihyKSxcIi5jc3ZcIikpXG59XG5gYGAifQ== -->
+<pre class="r"><code>for (r in names(data_ranks)){
+  print(r)
+  assay_rank = as.data.frame(assay(data_ranks[[r]]))
+  print(paste0(&quot;../../data/curated_metagenomics/modern_sources_&quot;,tolower(r),&quot;.csv&quot;))
+  write.csv(assay_rank, paste0(&quot;../../data/curated_metagenomics/modern_sources_&quot;,tolower(r),&quot;.csv&quot;))
+}</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiS2luZ2RvbVwiXG5bMV0gXCIuLi8uLi9kYXRhL2N1cmF0ZWRfbWV0YWdlbm9taWNzL21vZGVybl9zb3VyY2VzX2tpbmdkb20uY3N2XCJcblsxXSBcIlBoeWx1bVwiXG5bMV0gXCIuLi8uLi9kYXRhL2N1cmF0ZWRfbWV0YWdlbm9taWNzL21vZGVybl9zb3VyY2VzX3BoeWx1bS5jc3ZcIlxuWzFdIFwiQ2xhc3NcIlxuWzFdIFwiLi4vLi4vZGF0YS9jdXJhdGVkX21ldGFnZW5vbWljcy9tb2Rlcm5fc291cmNlc19jbGFzcy5jc3ZcIlxuWzFdIFwiT3JkZXJcIlxuWzFdIFwiLi4vLi4vZGF0YS9jdXJhdGVkX21ldGFnZW5vbWljcy9tb2Rlcm5fc291cmNlc19vcmRlci5jc3ZcIlxuWzFdIFwiRmFtaWx5XCJcblsxXSBcIi4uLy4uL2RhdGEvY3VyYXRlZF9tZXRhZ2Vub21pY3MvbW9kZXJuX3NvdXJjZXNfZmFtaWx5LmNzdlwiXG5bMV0gXCJHZW51c1wiXG5bMV0gXCIuLi8uLi9kYXRhL2N1cmF0ZWRfbWV0YWdlbm9taWNzL21vZGVybl9zb3VyY2VzX2dlbnVzLmNzdlwiXG5bMV0gXCJTcGVjaWVzXCJcblsxXSBcIi4uLy4uL2RhdGEvY3VyYXRlZF9tZXRhZ2Vub21pY3MvbW9kZXJuX3NvdXJjZXNfc3BlY2llcy5jc3ZcIlxuIn0= -->
+<pre><code>[1] &quot;Kingdom&quot;
+[1] &quot;../../data/curated_metagenomics/modern_sources_kingdom.csv&quot;
+[1] &quot;Phylum&quot;
+[1] &quot;../../data/curated_metagenomics/modern_sources_phylum.csv&quot;
+[1] &quot;Class&quot;
+[1] &quot;../../data/curated_metagenomics/modern_sources_class.csv&quot;
+[1] &quot;Order&quot;
+[1] &quot;../../data/curated_metagenomics/modern_sources_order.csv&quot;
+[1] &quot;Family&quot;
+[1] &quot;../../data/curated_metagenomics/modern_sources_family.csv&quot;
+[1] &quot;Genus&quot;
+[1] &quot;../../data/curated_metagenomics/modern_sources_genus.csv&quot;
+[1] &quot;Species&quot;
+[1] &quot;../../data/curated_metagenomics/modern_sources_species.csv&quot;</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
@@ -462,7 +514,7 @@ dropping rows without rowTree matches:
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKV2UncmUgZ29pbmcgdG8gdXNlIHRoZSBbY3VyYXRlZE1ldGFnZW5vbWljc0RhdGFdKDxodHRwczovL3dhbGRyb25sYWIuaW8vY3VyYXRlZE1ldGFnZW5vbWljRGF0YS8+KSBsaWJyYXJ5IHRvIGdldCBvdXIgcmVmZXJlbmNlIHNvdXJjZXMuXApUaGlzIGxpYnJhcnkgY29udGFpbnMgY3VyYXRlZCBtZXRhZGF0YSBmb3IgaHVtYW4gbWV0YWdlbm9taWMgc2FtcGxlcywgYXMgd2VsbCBhcyBwcmUtcHJlcHJvY2Vzc2VkIHRheG9ub21pYyBwcm9maWxlcyB1c2luZyBNZXRhUGhsYW4gMy4wCgpgYGB7cn0KbGlicmFyeShjdXJhdGVkTWV0YWdlbm9taWNEYXRhKQpsaWJyYXJ5KHRpZHl2ZXJzZSkKYGBgCgpgYGB7cn0Kc2FtcGxlTWV0YWRhdGEgJT4lIAogIGZpbHRlcihib2R5X3NpdGU9PSdzdG9vbCcgJiBhbnRpYmlvdGljc19jdXJyZW50X3VzZSAgPT0gJ25vJyAmIGRpc2Vhc2UgPT0gJ2hlYWx0aHknKSAlPiUgCiAgZ3JvdXBfYnkobm9uX3dlc3Rlcm5pemVkKSAlPiUgCiAgc2FtcGxlX24oMTAwKSAlPiUgCiAgdW5ncm91cCgpIC0+IHNlbGVjdGVkX3NhbXBsZXMKYGBgCgpgYGB7cn0Kc2VsZWN0ZWRfc2FtcGxlcyAlPiUgCiAgcmV0dXJuU2FtcGxlcygicmVsYXRpdmVfYWJ1bmRhbmNlIikgLT4gcmVsX2FiCmBgYAoKCmBgYHtyfQphc3NheShyZWxfYWIpICU+JSAKICBhcy5kYXRhLmZyYW1lKC4pICU+JSAKICB3cml0ZS5jc3YoIi4uLy4uL2RhdGEvY3VyYXRlZF9tZXRhZ2Vub21pY3MvbW9kZXJuX3NvdXJjZXMuY3N2Iiwgcm93Lm5hbWVzPVRSVUUpCmBgYAoKYGBge3J9CnNlbGVjdGVkX3NhbXBsZXMgJT4lIAogIGFzX3RpYmJsZSgpICU+JSAKICB3cml0ZV9jc3YoIi4uLy4uL2RhdGEvbWV0YWRhdGEvY3VyYXRlZF9tZXRhZ2Vub21pY3NfbW9kZXJuX3NvdXJjZXMuY3N2IikKYGBgCg==</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKV2UncmUgZ29pbmcgdG8gdXNlIHRoZSBbY3VyYXRlZE1ldGFnZW5vbWljc0RhdGFdKDxodHRwczovL3dhbGRyb25sYWIuaW8vY3VyYXRlZE1ldGFnZW5vbWljRGF0YS8+KSBsaWJyYXJ5IHRvIGdldCBvdXIgcmVmZXJlbmNlIHNvdXJjZXMuXApUaGlzIGxpYnJhcnkgY29udGFpbnMgY3VyYXRlZCBtZXRhZGF0YSBmb3IgaHVtYW4gbWV0YWdlbm9taWMgc2FtcGxlcywgYXMgd2VsbCBhcyBwcmUtcHJlcHJvY2Vzc2VkIHRheG9ub21pYyBwcm9maWxlcyB1c2luZyBNZXRhUGhsYW4gMy4wCgpgYGB7cn0KbGlicmFyeShjdXJhdGVkTWV0YWdlbm9taWNEYXRhKQpsaWJyYXJ5KHRpZHl2ZXJzZSkKbGlicmFyeShtaWEpCmBgYAoKYGBge3J9CnNhbXBsZU1ldGFkYXRhICU+JSAKICBmaWx0ZXIoYm9keV9zaXRlPT0nc3Rvb2wnICYgYW50aWJpb3RpY3NfY3VycmVudF91c2UgID09ICdubycgJiBkaXNlYXNlID09ICdoZWFsdGh5JykgJT4lIAogIGdyb3VwX2J5KG5vbl93ZXN0ZXJuaXplZCkgJT4lIAogIHNhbXBsZV9uKDEwMCkgJT4lIAogIHVuZ3JvdXAoKSAtPiBzZWxlY3RlZF9zYW1wbGVzCmBgYAoKYGBge3J9CnNlbGVjdGVkX3NhbXBsZXMgJT4lIAogIHJldHVyblNhbXBsZXMoInJlbGF0aXZlX2FidW5kYW5jZSIpIC0+IHJlbF9hYgpgYGAKCmBgYHtyfQpkYXRhX3JhbmtzID0gc3BsaXRCeVJhbmtzKHJlbF9hYikKYGBgCgpgYGB7cn0KZm9yIChyIGluIG5hbWVzKGRhdGFfcmFua3MpKXsKICBwcmludChyKQogIGFzc2F5X3JhbmsgPSBhcy5kYXRhLmZyYW1lKGFzc2F5KGRhdGFfcmFua3NbW3JdXSkpCiAgcHJpbnQocGFzdGUwKCIuLi8uLi9kYXRhL2N1cmF0ZWRfbWV0YWdlbm9taWNzL21vZGVybl9zb3VyY2VzXyIsdG9sb3dlcihyKSwiLmNzdiIpKQogIHdyaXRlLmNzdihhc3NheV9yYW5rLCBwYXN0ZTAoIi4uLy4uL2RhdGEvY3VyYXRlZF9tZXRhZ2Vub21pY3MvbW9kZXJuX3NvdXJjZXNfIix0b2xvd2VyKHIpLCIuY3N2IikpCn0KYGBgCgoKYGBge3J9CnNlbGVjdGVkX3NhbXBsZXMgJT4lIAogIGFzX3RpYmJsZSgpICU+JSAKICB3cml0ZV9jc3YoIi4uLy4uL2RhdGEvbWV0YWRhdGEvY3VyYXRlZF9tZXRhZ2Vub21pY3NfbW9kZXJuX3NvdXJjZXMuY3N2IikKYGBgCg==</div>
 
 
 

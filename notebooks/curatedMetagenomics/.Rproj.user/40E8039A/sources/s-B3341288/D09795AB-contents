@@ -9,6 +9,7 @@ This library contains curated metadata for human metagenomic samples, as well as
 ```{r}
 library(curatedMetagenomicData)
 library(tidyverse)
+library(mia)
 ```
 
 ```{r}
@@ -24,12 +25,19 @@ selected_samples %>%
   returnSamples("relative_abundance") -> rel_ab
 ```
 
+```{r}
+data_ranks = splitByRanks(rel_ab)
+```
 
 ```{r}
-assay(rel_ab) %>% 
-  as.data.frame(.) %>% 
-  write.csv("../../data/curated_metagenomics/modern_sources.csv", row.names=TRUE)
+for (r in names(data_ranks)){
+  print(r)
+  assay_rank = as.data.frame(assay(data_ranks[[r]]))
+  print(paste0("../../data/curated_metagenomics/modern_sources_",tolower(r),".csv"))
+  write.csv(assay_rank, paste0("../../data/curated_metagenomics/modern_sources_",tolower(r),".csv"))
+}
 ```
+
 
 ```{r}
 selected_samples %>% 

@@ -1,1 +1,1 @@
-[Launch server](https://mybinder.org/v2/gh/maxibor/microbiome_tutorial/HEAD)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/maxibor/microbiome_tutorial/HEAD?urlpath=lab)
