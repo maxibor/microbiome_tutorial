@@ -1,0 +1,55 @@
+82.23198	Bacteria
+17.76802	Archaea
+33.47957	Bacteria	Firmicutes
+28.4209	Bacteria	Bacteroidetes
+20.33151	Bacteria	Actinobacteria
+17.76802	Archaea	Euryarchaeota
+33.20604	Bacteria	Firmicutes	Clostridia
+28.4209	Bacteria	Bacteroidetes	Bacteroidia
+17.05626	Archaea	Euryarchaeota	Methanobacteria
+10.93774	Bacteria	Actinobacteria	Coriobacteriia
+9.39377	Bacteria	Actinobacteria	Actinobacteria
+0.71177	Archaea	Euryarchaeota	Halobacteria
+33.20604	Bacteria	Firmicutes	Clostridia	Clostridiales
+28.4209	Bacteria	Bacteroidetes	Bacteroidia	Bacteroidales
+17.05626	Archaea	Euryarchaeota	Methanobacteria	Methanobacteriales
+10.44681	Bacteria	Actinobacteria	Coriobacteriia	Coriobacteriales
+9.39377	Bacteria	Actinobacteria	Actinobacteria	Bifidobacteriales
+0.71177	Archaea	Euryarchaeota	Halobacteria	Halobacteriales
+0.49093	Bacteria	Actinobacteria	Coriobacteriia	Eggerthellales
+28.4209	Bacteria	Bacteroidetes	Bacteroidia	Bacteroidales	Prevotellaceae
+17.05626	Archaea	Euryarchaeota	Methanobacteria	Methanobacteriales	Methanobacteriaceae
+16.9781	Bacteria	Firmicutes	Clostridia	Clostridiales	Lachnospiraceae
+16.22794	Bacteria	Firmicutes	Clostridia	Clostridiales	Ruminococcaceae
+10.19013	Bacteria	Actinobacteria	Coriobacteriia	Coriobacteriales	Coriobacteriaceae
+9.39377	Bacteria	Actinobacteria	Actinobacteria	Bifidobacteriales	Bifidobacteriaceae
+0.71177	Archaea	Euryarchaeota	Halobacteria	Halobacteriales	Halococcaceae
+0.49093	Bacteria	Actinobacteria	Coriobacteriia	Eggerthellales	Eggerthellaceae
+0.25668	Bacteria	Actinobacteria	Coriobacteriia	Coriobacteriales	Atopobiaceae
+28.4209	Bacteria	Bacteroidetes	Bacteroidia	Bacteroidales	Prevotellaceae	Prevotella
+17.05626	Archaea	Euryarchaeota	Methanobacteria	Methanobacteriales	Methanobacteriaceae	Methanobrevibacter
+14.98257	Bacteria	Firmicutes	Clostridia	Clostridiales	Ruminococcaceae	Ruminococcus
+13.57908	Bacteria	Firmicutes	Clostridia	Clostridiales	Lachnospiraceae	Roseburia
+10.01929	Bacteria	Actinobacteria	Coriobacteriia	Coriobacteriales	Coriobacteriaceae	Collinsella
+9.39377	Bacteria	Actinobacteria	Actinobacteria	Bifidobacteriales	Bifidobacteriaceae	Bifidobacterium
+1.24537	Bacteria	Firmicutes	Clostridia	Clostridiales	Ruminococcaceae	Faecalibacterium
+0.98868	Bacteria	Firmicutes	Clostridia	Clostridiales	Lachnospiraceae	Dorea
+0.71177	Archaea	Euryarchaeota	Halobacteria	Halobacteriales	Halococcaceae	Halococcus
+0.49093	Bacteria	Actinobacteria	Coriobacteriia	Eggerthellales	Eggerthellaceae	Slackia
+0.25668	Bacteria	Actinobacteria	Coriobacteriia	Coriobacteriales	Atopobiaceae	Olsenella
+0.2491	Bacteria	Firmicutes	Clostridia	Clostridiales	Lachnospiraceae	Blautia
+0.17084	Bacteria	Actinobacteria	Coriobacteriia	Coriobacteriales	Coriobacteriaceae	Enorma
+13.57908	Bacteria	Firmicutes	Clostridia	Clostridiales	Lachnospiraceae	Roseburia	Roseburia_faecis
+9.49165	Bacteria	Actinobacteria	Coriobacteriia	Coriobacteriales	Coriobacteriaceae	Collinsella	Collinsella_aerofaciens
+2.16125	Bacteria	Firmicutes	Clostridia	Clostridiales	Lachnospiraceae	Lachnospiraceae_unclassified	Eubacterium_rectale
+0.91178	Bacteria	Firmicutes	Clostridia	Clostridiales	Lachnospiraceae	Dorea	Dorea_longicatena
+0.86854	Bacteria	Bacteroidetes	Bacteroidia	Bacteroidales	Prevotellaceae	Prevotella	Prevotella_sp_CAG_5226
+0.71177	Archaea	Euryarchaeota	Halobacteria	Halobacteriales	Halococcaceae	Halococcus	Halococcus_morrhuae
+0.52765	Bacteria	Actinobacteria	Coriobacteriia	Coriobacteriales	Coriobacteriaceae	Collinsella	Collinsella_stercoris
+0.49093	Bacteria	Actinobacteria	Coriobacteriia	Eggerthellales	Eggerthellaceae	Slackia	Slackia_isoflavoniconvertens
+0.27353	Bacteria	Firmicutes	Firmicutes_unclassified	Firmicutes_unclassified	Firmicutes_unclassified	Firmicutes_unclassified	Firmicutes_bacterium_CAG_791
+0.25668	Bacteria	Actinobacteria	Coriobacteriia	Coriobacteriales	Atopobiaceae	Olsenella	Olsenella_scatoligenes
+0.2491	Bacteria	Firmicutes	Clostridia	Clostridiales	Lachnospiraceae	Blautia	Ruminococcus_torques
+0.17084	Bacteria	Actinobacteria	Coriobacteriia	Coriobacteriales	Coriobacteriaceae	Enorma	Collinsella_massiliensis
+0.0769	Bacteria	Firmicutes	Clostridia	Clostridiales	Lachnospiraceae	Dorea	Dorea_formicigenerans
+0.0144	Bacteria	Firmicutes	Clostridia	Clostridiales	Ruminococcaceae	Ruminococcus	Ruminococcus_sp_CAG_488

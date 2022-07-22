@@ -1,6 +1,8 @@
 .Rproj.user
 .Rhistory
 .RData
+data/raw/
+scripts/eager/results
 # Raw data directory
 Hands on Introduction to Ancient Microbiome Analysis/tutorial/data/raw/
 .ipynb_checkpoints/

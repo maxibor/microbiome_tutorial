@@ -1,9 +1,11 @@
 .PHONY: run_pipeline
 run_pipeline:
-	nextflow run nf-core/eager -r 2.3.5 \
+	nextflow run maxibor/eager -r dev \
 	-profile eva,archgen \
-	--fasta '/projects1/users/borry/04_genomes/Homo_sapiens/NCBI/GRCh38/Sequence/BWAIndex/genome.fa' \
-	--bwa_index '/projects1/users/borry/04_genomes/Homo_sapiens/NCBI/GRCh38/Sequence/BWAIndex/' \
-	--input '/home/maxime_borry/07_mpi_shh_summerschool/dag-material/Hands on Introduction to Ancient Microbiome Analysis/tutorial/data/subsampled/*_R{1,2}_subsample_1000000.fastq.gz' \
+	--fasta '/home/maxime_borry/SDAG_old/04_genomes/Homo_sapiens/NCBI/GRCh38/Sequence/BWAIndex/genome.fa' \
+	--bwa_index '/home/maxime_borry/SDAG_old/04_genomes/Homo_sapiens/NCBI/GRCh38/Sequence/BWAIndex/' \
+	--input '/home/maxime_borry/13_spaam_summerschool/microbiome_tutorial/data/raw/*_{1,2}.fastq.gz' \
 	--complexity_filter_poly_g \
-	--hostremoval_input_fastq
+	--hostremoval_input_fastq \
+	-resume \
+	-with-tower
