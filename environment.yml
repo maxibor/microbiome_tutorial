@@ -14,3 +14,4 @@ dependencies:
   - seaborn
   - plotly
   - nb_conda
+  - sourcetracker
