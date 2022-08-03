@@ -13,5 +13,6 @@ dependencies:
   - scikit-learn
   - seaborn
   - plotly
-  - nb_conda
-  - sourcetracker
+  - ipykernel
+  - taxopy
+  - nbformat>4.2.0
